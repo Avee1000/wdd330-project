@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Osamagumwende Flourish Idahosa-Sunny" />
+  <meta name="description" content="DishDash - Home" />
+  <meta property="og:title" content="DishDash" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://avee1000.github.io/wdd231/project/images/food45.jpeg" />
+  <meta property="og:url" content="https://avee1000.github.io/wdd231/project/" />
+  <title>DishDash - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/larger.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+
+
+<body>
+  <div id="partialHeader" class="homeHeader"></div>
+
+  <div id="searchBoxContainer">
+    <div class="searchContainer">
+      <input type="search" id="search" name="q" placeholder="Search Recipes">
+      <button aria-label="button" class="search-icon"><svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+          <path
+            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+        </svg></button>
+    </div>
+
+    <div class="close">
+      <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+        <path fill="#ffffff"
+          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z">
+        </path>
+      </svg>
+    </div>
+  </div>
+
+  <main id="homeMainContainer">
+    <section class="welcome">
+      <div class="welcome-content">
+        <h2>Welcome to <span class="brand">DishDash</span>!</h2>
+        <p>Your go-to place to <span>discover</span>, <span>cook</span>, and <span>share</span> delicious
+          recipes that make every meal memorable. Whether you're a seasoned home cook or just learning how
+          to boil water, you're in the right place. TastyTreasures is your friendly digital recipe book
+          filled with handpicked dishes for every mood and moment. Browse through our growing collection
+          of recipes, each carefully curated with simple ingredients and easy-to-follow steps. From quick
+          weekday dinners to comforting weekend treats, we’ve got something to inspire your next meal.
+          Start exploring, get creative in the kitchen, and don't forget—you can even share your favorite
+          recipes with the community!</p>
+        <a href="./recipe_listing/index.html" class="cta-button">Explore Recipes</a>
+      </div>
+    </section>
+
+    <section class="featured-recipes">
+      <h2>Featured Recipes</h2>
+
+      <!-- Recipe 1 -->
+      <div class="recipe-card left-image">
+        <div class="imgContainer">
+        </div>
+        <div class="recipeContainer">
+          <div class="recipe-info">
+            <div class="recipes">
+            </div>
+            <a href="#" aria-label="view recipe" class="view-recipe-btn">View Recipe</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe 2 -->
+      <div class="recipe-card right-image">
+        <div class="recipeContainer">
+          <div class="recipe-info">
+            <div class="recipes">
+            </div>
+            <a href="#" aria-label="view recipe" class="view-recipe-btn">View Recipe</a>
+          </div>
+        </div>
+        <div class="imgContainer">
+        </div>
+      </div>
+
+      <!-- Recipe 3 -->
+      <div class="recipe-card left-image">
+        <div class="imgContainer">
+        </div>
+        <div class="recipeContainer">
+          <div class="recipe-info">
+            <div class="recipes">
+            </div>
+            <a href="#" aria-label="view label" class="view-recipe-btn">View Recipe</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="whats-cooking">
+      <h2>What’s Cooking?</h2>
+      <div class="cooking-grid">
+        <div class="cooking-card">
+          <h3><span>Quick Tip</span> Garlic Done Right</h3>
+          <p>Want to mellow the flavor of raw garlic? Soak minced garlic in lemon juice for 5 minutes
+            before using in dressings or sauces.</p>
+        </div>
+        <div class="cooking-card">
+          <h3><span>Try This</span> One-Pot Wonders</h3>
+          <p>Make cleanup easy by mastering one-pot meals—stews, pastas, and skillet meals can be quick,
+            cozy, and super satisfying.</p>
+        </div>
+        <div class="cooking-card">
+          <h3><span>In Season</span> Sweet Corn</h3>
+          <p>It’s corn season! Roast or grill it, then toss with butter, lime, and chili powder for a
+            simple but delicious twist.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="footer-cta-bar">
+    <div class="footer-cta-content">
+      <div class="footer-cta-text">
+        <h3>Ready for a next project?</h3>
+        <p>Let’s get started!</p>
+      </div>
+      <a href="submit.html" class="footer-cta-button">Submit a Recipe</a>
+    </div>
+  </section>
+  <div id="partialFooter"></div>
+
+  <script src="js/main.js" type="module"></script>
+
+
+</body>
+
+</html>
