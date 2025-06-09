@@ -11,7 +11,6 @@ export function headerJS() {
   }
 
   const searchButton = document.querySelector('.search');
-  console.log(searchButton)
   if (searchButton) {
     searchButton.addEventListener('click', () => {
       console.log('Search button clicked');
@@ -73,8 +72,7 @@ export function headerJS() {
     const heroBottom = header.getBoundingClientRect().bottom;
     const measure = header.offsetHeight - navContainer.offsetHeight;
 
-    console.log(navContainer.children);
-
+    
     if (navContainer.offsetHeight >= heroBottom && window.scrollY >= measure) {
       scrollDownEffect(navContainer);
     } else {

@@ -332,6 +332,59 @@ a.active {
   animation: unset;
 }
 
+.recipesPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  height: inherit;
+  top: 3rem;
+}
+
+.recipesPage>*{
+  all: unset;
+  width: calc(100% / 1.5);
+  margin-left: 3rem;
+}
+
+.recipesPage .heroText h2 {
+  width: 100%;
+}
+.recipesPage .heroText p {
+  font-weight: 250;
+  font-family: "roboto";
+  border-bottom: 2px solid white;
+  padding-bottom: 1rem;
+}
+
+.recipesPage .heroLinkContainer div {
+  position: relative;
+  max-width: 90%;
+  margin: 1.5rem  auto 0 auto;
+}
+
+.recipesPage .heroLinkContainer a {
+  all: unset;
+  background-color: #ff9100;
+  color: black;
+  display: inline-block;
+  padding: .8rem 3rem;
+  font-size: clamp(.5rem, 1rem, 1rem);
+  font-weight: 300;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recipesPage .heroLinkContainer a:hover {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.recipesPage .learn-more::after {
+  all: unset;
+}
+
 
 #searchBoxContainer {
   position: fixed;

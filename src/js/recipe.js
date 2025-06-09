@@ -1,35 +1,45 @@
-const images = [
+import {
+  loadHeaderFooter
+} from "./utils.mjs";
+
+loadHeaderFooter().then(() => {
+  const images = [
     "../images/recipe1.webp",
     "../images/recipe3.webp",
     "../images/recipe4.webp"
-];
+  ];
 
-const searchBut = document.querySelector('#searchButtonContainer');
-searchBut.style.transform = 'scale(0)';
-searchBut.style.transition = '.5s ease-in-out';
+  const searchBut = document.querySelector('#searchButtonContainer');
+  searchBut.style.transform = 'scale(0)';
+  searchBut.style.transition = '.5s ease-in-out';
+  setTimeout(() => {
+      searchBut.style.display = 'none';
+  }, 600);
 
-const randomIndex = Math.floor(Math.random() * images.length);
-const style = document.createElement('style');
-const header = document.querySelector('.homeHeader');
-console.log(header);
-header.classList.add('recipeHeader');
-style.innerHTML += `    
+
+  const randomIndex = Math.floor(Math.random() * images.length);
+  const style = document.createElement('style');
+  const header = document.querySelector('.homeHeader');
+  console.log(header);
+  header.classList.add('recipeHeader');
+  style.innerHTML += `    
   #header::before {
     background-image: url('${images[randomIndex]}');
   }
 
 `;
-header.appendChild(style);
+  header.appendChild(style);
 
 
-////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////
 
 
-const searchBox = document.querySelector('#searchBoxContainer');
-searchBox.classList.add('recipeSearchBox');
+  const searchBox = document.querySelector('#searchBoxContainer');
+  searchBox.classList.add('recipeSearchBox');
 
-const heroContainerMain = document.querySelector('.heroContainer');
-heroContainerMain.classList.add('recipesPage');
-heroContainerMain.querySelector('.heroText').innerHTML = `<h2>Feeling hungry or curious?</h2>
+  const heroContainerMain = document.querySelector('.heroContainer');
+  heroContainerMain.classList.add('recipesPage');
+  heroContainerMain.querySelector('.heroText').innerHTML = `<h2>Feeling hungry or curious?</h2>
 <p>Explore our handpicked recipes—from quick breakfasts to indulgent desserts. Search by category or scroll to discover your next favorite dish.</p>`;
-heroContainerMain.querySelector('a').innerHTML = `Browse All Recipes`;
+  heroContainerMain.querySelector('a').innerHTML = `Browse All Recipes`;
+});
