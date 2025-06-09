@@ -30,11 +30,6 @@ export function renderWithTemplate(template, parentElement, data, callback) {
   }
 }
 
-export function loadHeaderDetails(element) {
-  const elementVar = element.querySelector('.heroContainer');
-  elementVar.querySelector('.heroText').innerHTML = `<h2>Discover, Cook, and Share Your Favorite Recipes</h2>
-  <p>Find your next favorite dish today!</p>`;
-}
 
 // Load an HTML template from a path asynchronously
 export async function loadTemplate(path) {
@@ -55,5 +50,12 @@ export async function loadHeaderFooter() {
     const footerTemplate = await loadTemplate('/partials/footer.html');
     renderWithTemplate(footerTemplate, footer);
   }
-  loadHeaderDetails(header.querySelector('#header'))
+}
+
+export function hideSearchButton(element) {
+  element.style.transform = 'scale(0)';
+  element.style.transition = '.5s ease-in-out';
+  setTimeout(() => {
+    element.style.display = 'none';
+  }, 600);
 }

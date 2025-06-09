@@ -232,7 +232,7 @@ nav {
 }
 
 #logoAndNavigationContainer>* {
-  background-color: rgba(3, 3, 3, 0.445);
+  background-color: rgba(3, 3, 3, 0.745);
   backdrop-filter: blur(5px);
   padding: .5rem 2rem;
   border-radius: 50px;
@@ -1071,13 +1071,11 @@ a.active {
 
 /* ///////////////////////////////////////////////////////// */
 .headerSubmit  {
-  background-color: black;
+  background-color: var(--secondary);
   background-image: none;
   height: 80dvh;
 }
-.headerSubmit #logoAndNavigationContainer {
-  background-color: black;
-}
+
 .headerSubmit .main {
   margin-top: 0;
 }
@@ -1085,7 +1083,7 @@ a.active {
   opacity: 1 !important;
 }
 .headerSubmit div.heroText h2, .headerSubmit div.heroText p {
-  color: #ffffff;
+  color: black;
 }
 .headerSubmit .heroLinkContainer {
   display: none;
@@ -1094,7 +1092,7 @@ a.active {
 .submit-recipe-page {
   max-width: 700px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 5rem 1rem;
 }
 
 .submit-intro {

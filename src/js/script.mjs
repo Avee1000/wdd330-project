@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////
 export function headerJS() {
-
+  
   function scrollDownEffect(element) {
     for (let i = 0; i < navContainer.children.length; i++) {
       element.children[i].style.backgroundColor = 'rgba(3, 3, 3, 0.69)';
@@ -150,28 +150,12 @@ export function headerJS() {
 }
 
 
-
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const heroBottom = header.getBoundingClientRect().bottom;
-//   const measure = header.offsetHeight - navContainer.offsetHeight;
-
-//   if (navContainer.offsetHeight >= heroBottom && window.scrollY >= measure) {
-//       navContainer.style.backgroundColor = '';
-//       navContainer.querySelector('#logo').style.marginLeft = '';
-//       navContainer.querySelector('#logo').style.transform = '';
-//       navContainer.querySelector('#logo').style.transition = 'all .2s ease-in-out';
-//   } else {
-//     navContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.976)';
-//     navContainer.querySelector('#logo').style.marginLeft = '10px';
-//     navContainer.querySelector('#logo').style.transform = 'scale(.9)';
-//     navContainer.querySelector('#logo').style.transition = 'all .2s ease-in-out';
-//   }
-// });
-
-// const lastModifiedContainer = document.createElement('p'),
-//   lastModified = new Date(document.lastModified);
-
-// lastModifiedContainer.innerHTML = `<strong>Last Modified: </strong>${lastModified}`;
-// document.querySelector('.copyright').append(lastModifiedContainer);
+const links = document.querySelectorAll('.navigation a');
+const current = window.location.pathname;
+links.forEach((link) => {
+  const linkPath = new URL(link.href).pathname;
+  console.log(linkPath);
+  if (current === linkPath || (current === '/' && linkPath.endsWith('/index.html'))) {
+    link.classList.add('active');
+  }
+});

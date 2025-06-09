@@ -17,7 +17,16 @@ style.innerHTML += `
     background-image: url('${images[randomIndex]}');
   }
 `;
-header.appendChild(style);
+  header.appendChild(style);
+  
+   function loadHeaderDetails(element) {
+    const elementVar = element.querySelector('.heroContainer');
+    elementVar.querySelector('.heroText').innerHTML = `<h2>Discover, Cook, and Share Your Favorite Recipes</h2>
+    <p>Find your next favorite dish today!</p>`;
+  }
+
+  loadHeaderDetails(document.querySelector('#partialHeader'))
+
 })
 
 

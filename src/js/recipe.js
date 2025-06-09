@@ -2,6 +2,8 @@ import {
   loadHeaderFooter
 } from "./utils.mjs";
 
+import { hideSearchButton } from "./utils.mjs";
+
 loadHeaderFooter().then(() => {
   const images = [
     "../images/recipe1.webp",
@@ -10,11 +12,7 @@ loadHeaderFooter().then(() => {
   ];
 
   const searchBut = document.querySelector('#searchButtonContainer');
-  searchBut.style.transform = 'scale(0)';
-  searchBut.style.transition = '.5s ease-in-out';
-  setTimeout(() => {
-      searchBut.style.display = 'none';
-  }, 600);
+  hideSearchButton(searchBut);
 
 
   const randomIndex = Math.floor(Math.random() * images.length);
