@@ -29,7 +29,6 @@ export function headerJS() {
 
   const ms = document.querySelector('.learn-more');
   const navContainer = document.querySelector("#logoAndNavigationContainer");
-  const navContainerChildren = document.querySelector("#logoAndNavigationContainer > * ");
 
 
   let isClickEventActive = false;

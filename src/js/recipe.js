@@ -12,7 +12,7 @@ loadHeaderFooter().then(() => {
   ];
 
   const searchBut = document.querySelector('#searchButtonContainer');
-  hideSearchButton(searchBut);
+  hideSearchButton(searchBut, 500);
 
 
   const randomIndex = Math.floor(Math.random() * images.length);

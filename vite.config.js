@@ -1,5 +1,9 @@
-import { resolve } from "path";
-import { defineConfig } from "vite";
+import {
+  resolve
+} from "path";
+import {
+  defineConfig
+} from "vite";
 
 export default defineConfig({
   root: "src/",
@@ -10,6 +14,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "src/index.html"),
         recipes: resolve(__dirname, "src/recipes/index.html"),
+        forms: resolve(__dirname, "src/form/index.html"),
+
       },
     },
   },

@@ -52,10 +52,10 @@ export async function loadHeaderFooter() {
   }
 }
 
-export function hideSearchButton(element) {
+export function hideSearchButton(element, time) {
   element.style.transform = 'scale(0)';
   element.style.transition = '.5s ease-in-out';
   setTimeout(() => {
     element.style.display = 'none';
-  }, 600);
+  }, time);
 }
