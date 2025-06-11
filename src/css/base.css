@@ -220,7 +220,6 @@ nav {
   text-decoration: none;
   display: block;
   font-weight: 300;
-  transition: 0.5s;
   font-size: 1rem;
   padding: 13px;
   cursor: pointer;
@@ -240,9 +239,7 @@ nav {
 
 a.active {
   color: var(--highlight);
-  font-size: calc(100% / 1.2);
-  border: 2px solid #ff9100;
-  border-radius: 40px;
+  font-size: calc(100% + .25em);
 }
 
 .heroContainer {

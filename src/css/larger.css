@@ -42,19 +42,12 @@
         transition: border-bottom 0.7s ease; */
     }
 
-    .navigation a:not(.active)::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 3px; 
-        background-color: white;
-        margin-top: 13px;
+    .navigation a:hover {
+        color: var(--highlight);
     }
 
-    .navigation a:hover::before {
-        width: 100%;
+    .navigation:hover > li a:not(:hover){
+        color: white;
     }
 
     .recipesPage>*{
