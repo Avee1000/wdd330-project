@@ -1,5 +1,16 @@
 //////////////////////////////////////////////////////////
 export function headerJS() {
+
+  const links = document.querySelectorAll('.navigation a');
+const current = window.location.pathname;
+links.forEach((link) => {
+  const linkPath = new URL(link.href).pathname;
+  console.log(linkPath);
+  if (current === linkPath || (current === '/' && linkPath.endsWith('/index.html'))) {
+    link.classList.add('active');
+  }
+});
+
   
   function scrollDownEffect(element) {
     for (let i = 0; i < navContainer.children.length; i++) {
@@ -149,12 +160,3 @@ export function headerJS() {
 }
 
 
-const links = document.querySelectorAll('.navigation a');
-const current = window.location.pathname;
-links.forEach((link) => {
-  const linkPath = new URL(link.href).pathname;
-  console.log(linkPath);
-  if (current === linkPath || (current === '/' && linkPath.endsWith('/index.html'))) {
-    link.classList.add('active');
-  }
-});
