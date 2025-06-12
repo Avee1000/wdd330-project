@@ -18,8 +18,8 @@ loadHeaderFooter().then(() => {
   const randomIndex = Math.floor(Math.random() * images.length);
   const style = document.createElement('style');
   const header = document.querySelector('.homeHeader');
-  console.log(header);
   header.classList.add('recipeHeader');
+  
   style.innerHTML += `    
   #header::before {
     background-image: url('${images[randomIndex]}');

@@ -5,8 +5,14 @@ import {
   loadHeaderFooter
 } from './utils.mjs';
 
+import {
+  headerJS
+} from './script.mjs';
+
 loadHeaderFooter().then(() => {
-  const header = document.querySelector('#header');
+
+  headerJS();
+  const header = document.querySelector('header');
   header.classList.add('favoriteHeader');
 
   //////////////////////////////////////////////////////////////////////////////////////////////////

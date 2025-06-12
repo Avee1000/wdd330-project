@@ -62,12 +62,20 @@ export function hideSearchButton(element, time) {
 
 export function activeLinks() {
   const links = document.querySelectorAll('.navigation a');
-  const current = window.location.pathname;
+  const normalize = (path) => {
+    let p = path.replace(/index\.html$/, '');
+    if (!p.endsWith('/')) {
+      p += '/';
+    }
+    return p;
+  };
+
+  const current = normalize(window.location.pathname);
   links.forEach((link) => {
-    const linkPath = new URL(link.href).pathname;
-    console.log(linkPath);
-    if (current === linkPath || (current === '/' && linkPath.endsWith('/index.html'))) {
+    const linkPath = normalize(new URL(link.href).pathname);
+    if (current === linkPath) {
       link.classList.add('active');
     }
   });
+
 }

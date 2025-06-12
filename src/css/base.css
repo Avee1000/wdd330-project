@@ -88,7 +88,7 @@ header {
 }
 
 header.favoriteHeader {
-  height: 70dvh;
+  height: 100dvh;
 }
 
 header.thanksHeader {
@@ -1068,9 +1068,9 @@ a.active {
 
 /* ///////////////////////////////////////////////////////// */
 .headerSubmit  {
-  background-color: var(--secondary);
+  background-color: black;
   background-image: none;
-  height: 80dvh;
+  height: 80dvh;  
 }
 
 .headerSubmit .main {
@@ -1079,9 +1079,8 @@ a.active {
 .headerSubmit div.heroText {
   opacity: 1 !important;
 }
-.headerSubmit div.heroText h2, .headerSubmit div.heroText p {
-  color: black;
-}
+/* .headerSubmit div.heroText h2, .headerSubmit div.heroText p {
+} */
 .headerSubmit .heroLinkContainer {
   display: none;
 }
