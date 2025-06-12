@@ -1,4 +1,5 @@
 import RecipeData from './RecipeData.mjs';
+import { showModal } from './featured-recipes.mjs';
 
 const recipesContainer = document.getElementById('product-list');
 const paginationContainer = document.getElementById('pagination'); 

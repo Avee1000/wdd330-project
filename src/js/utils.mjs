@@ -59,3 +59,15 @@ export function hideSearchButton(element, time) {
     element.style.display = 'none';
   }, time);
 }
+
+export function activeLinks() {
+  const links = document.querySelectorAll('.navigation a');
+  const current = window.location.pathname;
+  links.forEach((link) => {
+    const linkPath = new URL(link.href).pathname;
+    console.log(linkPath);
+    if (current === linkPath || (current === '/' && linkPath.endsWith('/index.html'))) {
+      link.classList.add('active');
+    }
+  });
+}

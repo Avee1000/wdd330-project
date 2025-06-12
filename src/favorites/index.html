@@ -6,12 +6,12 @@
     <meta name="author" content="Osamagumwende Flourish Idahosa-Sunny" />
     <meta
             name="description"
-            content="DishDash - Submit Recipes" />
+            content="DishDash - Your Favorites" />
     <meta property="og:title" content="DishDash"/>
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://avee1000.github.io/wdd231/project/images/food45.jpeg" />
+    <meta property="og:image" content="https://avee1000.github.io/wdd231/project/images/fav2.jpg" />
     <meta property="og:url" content="https://avee1000.github.io/wdd231/project/" />
-    <title>DishDash - Submit a Recipe</title>
+    <title>DishDash - Favorites</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -21,7 +21,9 @@
 </head>
 
 <body>
-  <div id="partialHeader" class="homeHeader"></div>
+
+    <div id="partialHeader" class="homeHeader"></div>
+
             
         <div id="searchBoxContainer">
             <div class="searchContainer">
@@ -34,56 +36,61 @@
             </div>
         </div>
 
-        <main class="submit-recipe-page">
-            <form action="thanks.html" method="get" class="recipe-form">
-                <label for="name">Recipe Name*
-                    <input type="text" id="name" name="name" required>
-                </label>
-          
-                <label for="image">Image URL
-                    <input type="url" id="image" name="image" placeholder="https://example.com/your-dish.jpg">
-                </label>                
-
-                <label for="ingredients">Ingredients*
-                    <textarea id="ingredients" name="ingredients" rows="5" required></textarea>
-                </label>
-
-                <label for="instructions">Instructions*
-                    <textarea id="instructions" name="instructions" rows="6" required></textarea>
-                </label>
-
-                <label for="category">Category*
-                    <select id="category" name="category" required>
-                        <option value="">--Select a Category--</option>
-                        <option value="Breakfast">Breakfast</option>
-                        <option value="Lunch">Lunch</option>
-                        <option value="Dinner">Dinner</option>
-                        <option value="Dessert">Dessert</option>
-                        <option value="Healthy">Healthy</option>
-                        <option value="Quick & Easy">Quick & Easy</option>
-                    </select>
-                </label>
-            
-                <label for="cooktime">Cook Time (minutes)*
-                    <input type="number" id="cooktime" name="cooktime" min="1" required>
-                </label>
-
-                <label for="preptime">Prep Time (minutes)*
-                    <input type="number" id="preptime" name="preptime" min="1" required>
-                </label>
+        <main>                            
+            <div id="filter-section">
+                <label for="meal-filter">Meal Type:</label>
+                <select id="meal-filter">
+                    <option value="all">All</option>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                    <option value="Snack">Snack</option>
+                    <option value="Beverage">Beverage</option>
+                    <option value="Dessert">Dessert</option>
+                    <option value="Appetizer">appetizer</option>
+                    <option value="Side Dish">Side Dish</option>
+                </select>
                 
-                <fieldset>
-                    <legend>Difficulty*</legend>
-                    <label><input type="radio" name="difficulty" value="Easy" required> Easy</label>
-                    <label><input type="radio" name="difficulty" value="Medium"> Medium</label>
-                    <label><input type="radio" name="difficulty" value="Hard"> Hard</label>
-                </fieldset>
-            
-                <button type="submit" class="cta-button">Submit Recipe</button>
-            </form>
-          </main>
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="all">All</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                </select>
+                
+                <label for="sort-products">Sort By:</label>
+                <select id="sort-products">
+                    <option value="name">Name</option>
+                    <option value="rating">Rating</option>
+                    <option value="calories">Calories Per Serving</option>
+                </select>
+            </div>
+                
+            <div id="allRecipesInfo">
+                <div id="product-list" class="product-grid">
+                    <template id="recipesCardTemplate">
+                        <div class="recipesProductCard">
+                            <div class="recipeImageContainer">
+                                <span class="info-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"/></svg></span>
+                                <img src="" alt="" loading="lazy">
+                                <div class="img-text-overlay">
+                                    <div class="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recipeInformationContainer">
+                            </div>
+                            <div class="recipeLinksContainer">
+                                <a href="#" aria-label="save" class="removeFavorites"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg></a>
+                                <a href="#" aria-label="view label" class="view-recipe-btn">View Recipe</a>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>                
+        </main>
 
-          <footer class="main-footer">
+        <footer class="main-footer">
             <div class="footer-container">
                 <div class="footer-grid">
                     <div class="footer-col brand">
@@ -137,9 +144,9 @@
                     Osamagumwende Flourish Idahosa-Sunny</p>
             </div>
         </footer>
-          
+
         <script defer src="../js/hamburger.js"></script>
+        <script src="../js/favorites.js" type="module"></script>
         <script src="../js/main.js" type="module"></script>
-        <script defer src="../js/submit.js" type="module"></script>
 
 </body>

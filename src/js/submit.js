@@ -5,8 +5,8 @@ import {
 import { hideSearchButton } from "./utils.mjs";
 
 loadHeaderFooter().then(() => {
-  const searchBut = document.querySelector('#searchButtonContainer');
-  hideSearchButton(searchBut);
+    const searchBut = document.querySelector('#searchButtonContainer');
+    hideSearchButton(searchBut);
     
   const heroContainerMain = document.querySelector('.heroContainer');
   heroContainerMain.querySelector('.heroText').innerHTML = `<h2>Submit a Recipe</h2>
@@ -14,3 +14,14 @@ loadHeaderFooter().then(() => {
 
   header.classList.add('headerSubmit');
 });
+
+
+  const links = document.querySelectorAll('.navigation a');
+  const current = window.location.pathname;
+  links.forEach((link) => {
+    const linkPath = new URL(link.href).pathname;
+    console.log(linkPath);
+    if (current === linkPath || (current === '/' && linkPath.endsWith('/index.html'))) {
+      link.classList.add('active');
+    }
+  });

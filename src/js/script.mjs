@@ -1,17 +1,9 @@
+import { activeLinks } from './utils.mjs';
 //////////////////////////////////////////////////////////
 export function headerJS() {
 
-  const links = document.querySelectorAll('.navigation a');
-const current = window.location.pathname;
-links.forEach((link) => {
-  const linkPath = new URL(link.href).pathname;
-  console.log(linkPath);
-  if (current === linkPath || (current === '/' && linkPath.endsWith('/index.html'))) {
-    link.classList.add('active');
-  }
-});
+  activeLinks();
 
-  
   function scrollDownEffect(element) {
     for (let i = 0; i < navContainer.children.length; i++) {
       element.children[i].style.backgroundColor = 'rgba(3, 3, 3, 0.69)';
@@ -82,7 +74,7 @@ links.forEach((link) => {
     const heroBottom = header.getBoundingClientRect().bottom;
     const measure = header.offsetHeight - navContainer.offsetHeight;
 
-    
+
     if (navContainer.offsetHeight >= heroBottom && window.scrollY >= measure) {
       scrollDownEffect(navContainer);
     } else {
@@ -158,5 +150,4 @@ links.forEach((link) => {
     // }
   });
 }
-
 
