@@ -62,6 +62,7 @@ export function showModal(recipe) {
 
 async function displayRandomRecipes() {
     const data = new RecipeData();
+    console.log(data);
     const recipes = await data.getData();
 
     const recipeList = [];
