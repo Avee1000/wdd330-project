@@ -15,6 +15,7 @@ export default defineConfig({
         main: resolve(__dirname, "src/index.html"),
         recipes: resolve(__dirname, "src/recipes/index.html"),
         forms: resolve(__dirname, "src/form/index.html"),
+        favorites: resolve(__dirname, "src/favorites/index.html"),
 
       },
     },
