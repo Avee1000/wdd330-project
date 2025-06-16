@@ -1,8 +1,4 @@
-import { loadHeaderFooter } from "./utils.mjs";
-
-async function initHamburger() {
-  await loadHeaderFooter();
-
+export function initHamburger() {
   const header = document.getElementById("header");
   const navigation = header?.querySelector("nav");
   const hamburger = header?.querySelector("#menu");
@@ -19,5 +15,3 @@ async function initHamburger() {
     });
   }
 }
-
-initHamburger();

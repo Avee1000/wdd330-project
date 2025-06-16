@@ -1,108 +1,105 @@
 /* //////////////////////////////////////////////////////////////////////// */
-@media screen and (min-width: 800px){
-    .switch{
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        display: inline-block;
-        width: 65px;
-        height: 35px;
-    }
+@media screen and (min-width: 800px) {
+  .switch {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: inline-block;
+    width: 65px;
+    height: 35px;
+  }
 
-    nav {
-        display: block;
-        width: 95%;
-        height: auto;
-        border-radius: 10px;
-    }
+  nav {
+    display: block;
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+  }
 
-    #menu, #close{
-        display: none;
-    }
-    
-    .navigation{
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        margin: 0;
-    }
+  #menu,
+  #close {
+    display: none;
+  }
 
-    .navigation li{
-        display: flex;
-        align-items: center;
-        padding: .8rem 1rem;
-        font-weight: 200;
-    }
+  .navigation {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+  }
 
-    .navigation a {
-        position: relative;
-        /* border-bottom: 2px solid transparent; 
+  .navigation li {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    font-weight: 200;
+  }
+
+  .navigation a {
+    position: relative;
+    /* border-bottom: 2px solid transparent; 
         padding-bottom: 5px; 
         transition: border-bottom 0.7s ease; */
+  }
+
+  .navigation a:hover {
+    color: var(--highlight);
+  }
+
+  .navigation:hover > li a:not(:hover) {
+    color: white;
+  }
+
+  .recipesPage > * {
+    width: calc(100% / 2);
+    margin-left: 5rem;
+  }
+
+  @media screen and (width >= 800px) and (width <= 1369px) {
+    .navigation li {
+      padding: 0.8rem 0.6rem;
     }
 
-    .navigation a:hover {
-        color: var(--highlight);
+    .recipesPage > * {
+      width: calc(100% / 1.6);
     }
 
-    .navigation:hover > li a:not(:hover){
-        color: white;
+    .recipesPage .heroText p {
+      font-size: clamp(0.5rem, 2vw, 1.5rem);
     }
 
-    .recipesPage>*{
-        width: calc(100% / 2);
-        margin-left: 5rem;
-      }
-
-      @media screen and (width >= 800px) and (width <= 1369px) {
-
-        .navigation li{
-            padding: .8rem .6rem;
-        }
-
-        .recipesPage>*{
-            width: calc(100% / 1.6);
-        }
-    
-        .recipesPage .heroText p {
-            font-size: clamp(.5rem, 2vw, 1.5rem);
-        }
-
-        .footer-grid {
-            margin: 0 auto;
-            all: unset;
-            /* display: flex;
+    .footer-grid {
+      margin: 0 auto;
+      all: unset;
+      /* display: flex;
             justify-content: center;
             gap: 60px;
             align-items: start; */
-            display: grid;
-            grid-template-areas: 
-            "logo customers company further"
-            "follow follow follow follow";
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1rem;
-            padding: 1rem;
-
-         }
-        .brand {
-            grid-area: logo;
-        }
-        .customers {
-            grid-area: customers;
-        }
-        .company {
-            grid-area: company;
-        }
-        .further {
-            grid-area: further;
-        }
-        .social {
-            grid-area: follow;
-            place-self: center;
-            text-align: center;
-            margin-top: 4rem;
-        }
+      display: grid;
+      grid-template-areas:
+        "logo customers company further"
+        "follow follow follow follow";
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      padding: 1rem;
     }
-
+    .brand {
+      grid-area: logo;
+    }
+    .customers {
+      grid-area: customers;
+    }
+    .company {
+      grid-area: company;
+    }
+    .further {
+      grid-area: further;
+    }
+    .social {
+      grid-area: follow;
+      place-self: center;
+      text-align: center;
+      margin-top: 4rem;
+    }
+  }
 }
-
