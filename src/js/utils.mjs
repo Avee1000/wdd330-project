@@ -40,6 +40,9 @@ export async function loadTemplate(path) {
 
 // Load header and footer partials into #header and #footer
 export async function loadHeaderFooter() {
+
+  if (document.getElementById('header')) return;
+
   const header = document.getElementById('partialHeader');
   const footer = document.getElementById('partialFooter');
   if (header) {

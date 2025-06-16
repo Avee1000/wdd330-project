@@ -5,5 +5,5 @@ import { initHamburger } from "./hamburger.mjs";
 
 loadHeaderFooter().then(() => {
   headerJS();
-  initHamburger();
+  // initHamburger();
 });
