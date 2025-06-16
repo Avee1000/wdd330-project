@@ -1,19 +1,23 @@
-import {
-  loadHeaderFooter
-} from "./utils.mjs";
+import { loadHeaderFooter } from "./utils.mjs";
 
-await loadHeaderFooter().then(() => {
-    const hamburger = document.querySelector("#menu");
-    const navigation = document.querySelector("nav");
+async function initHamburger() {
+  await loadHeaderFooter();
 
+  const header = document.getElementById("header");
+  const navigation = header?.querySelector("nav");
+  const hamburger = header?.querySelector("#menu");
+  const closeButton = header?.querySelector("#close");
 
-  hamburger.addEventListener('click', () => {
-    navigation.classList.add('show');
-    document.body.style.overflow = 'hidden';
-  });
+  if (hamburger && navigation && closeButton) {
+    hamburger.addEventListener("click", () => {
+      navigation.classList.add("show");
+    });
 
-  document.querySelector("#close").addEventListener('click', () => {
-    navigation.classList.remove('show');
-    document.body.style.overflow = '';
-  });
-});
+    closeButton.addEventListener("click", () => {
+      navigation.classList.remove("show");
+      document.body.style.overflow = "";
+    });
+  }
+}
+
+initHamburger();
