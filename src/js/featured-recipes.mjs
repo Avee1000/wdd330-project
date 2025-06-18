@@ -103,7 +103,7 @@ async function displayRandomRecipes() {
             <p>Prep Time: ${recipe.prepTimeMinutes}</p>
             <p>Cooking Time: ${recipe.cookTimeMinutes} minutes</p>
             <p>Servings: ${recipe.servings}</p>
-            <p>Ratings: ${recipe.rating}</p>
+            <p>Tags: ${recipe.tags}</p>
         `;
 
         card.querySelector('.imgContainer').addEventListener('mouseenter', function () {

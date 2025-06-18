@@ -172,40 +172,6 @@
       "userId": 1
     },
     {
-      "id": 6,
-      "name": "Fennel & Clementine Salad",
-      "image": "https://img.spoonacular.com/recipes/658507-556x370.jpg",
-      "ingredients": [
-        "fennel bulb",
-        "clementines",
-        "clementine juice",
-        "lemon juice",
-        "olive oil",
-        "dijon mustard",
-        "honey",
-        "salt",
-        "black pepper",
-        "fresh mint"
-      ],
-      "instructions": [
-        "Slice fennel thinly using a knife or mandoline.",
-        "Peel and segment clementines.",
-        "Whisk together clementine juice, lemon juice, olive oil, mustard, and honey.",
-        "Toss fennel and clementines with the dressing in a bowl.",
-        "Season with salt and pepper.",
-        "Garnish with fresh mint leaves and serve."
-      ],
-      "prepTimeMinutes": 15,
-      "cookTimeMinutes": 0,
-      "servings": 2,
-      "difficulty": "Easy",
-      "cuisine": "Mediterranean",
-      "caloriesPerServing": 180,
-      "tags": ["vegetarian", "gluten free", "salad", "citrus"],
-      "mealType": "Appetizer",
-      "userId": 1
-    },
-    {
       "id": 7,
       "name": "Maple Dijon Apple Coleslaw",
       "image": "https://img.spoonacular.com/recipes/716195-556x370.jpg",
