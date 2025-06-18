@@ -1,0 +1,338 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Southern Style Green Bean",
+      "image": "https://img.spoonacular.com/recipes/715515-556x370.jpg",
+      "ingredients": [
+        "bacon",
+        "butter",
+        "fresh green beans",
+        "new potatoes",
+        "parsley",
+        "salt",
+        "thyme",
+        "white onion"
+      ],
+      "instructions": [
+        "In a medium pot on medium heat, melt butter and add bacon pieces.",
+        "Cook for a couple of minutes, then add onion, thyme, and parsley. Stir frequently for 10 minutes.",
+        "Add green beans and quartered potatoes. Cover with water and bring to a boil.",
+        "Reduce heat to a simmer, cover, and cook for 20 minutes, stirring occasionally."
+      ],
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 30,
+      "servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "Southern",
+      "caloriesPerServing": 487,
+      "tags": ["gluten free", "southern", "side dish"],
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "name": "Fettuccine Alfredo with Mushrooms",
+      "image": "https://img.spoonacular.com/recipes/782601-556x370.jpg",
+      "ingredients": [
+        "fettuccine pasta",
+        "unsalted butter",
+        "heavy cream",
+        "parmesan cheese",
+        "garlic",
+        "mushrooms",
+        "salt",
+        "black pepper",
+        "olive oil"
+      ],
+      "instructions": [
+        "Cook the fettuccine in salted water according to package instructions. Drain and set aside.",
+        "In a large skillet over medium heat, melt butter with olive oil. Add garlic and mushrooms and sauté for 5-7 minutes until mushrooms are soft.",
+        "Pour in heavy cream and bring to a simmer. Add grated parmesan cheese and stir until melted and smooth.",
+        "Season with salt and black pepper. Add the cooked pasta and toss until coated.",
+        "Serve immediately with additional parmesan if desired."
+      ],
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 20,
+      "servings": 4,
+      "difficulty": "Medium",
+      "cuisine": "Italian",
+      "caloriesPerServing": 620,
+      "tags": ["italian", "creamy", "vegetarian"],
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "name": "Raspberry Cheesecake Bars",
+      "image": "https://img.spoonacular.com/recipes/657842-556x370.jpg",
+      "ingredients": [
+        "almond extract",
+        "brown sugar",
+        "butter",
+        "cornstarch",
+        "cream cheese",
+        "condensed milk",
+        "eggs",
+        "flour",
+        "heavy cream",
+        "lemon zest",
+        "raspberries",
+        "sugar",
+        "vanilla extract",
+        "salt"
+      ],
+      "instructions": [
+        "Cream together the butter with sugars, lemon zest, egg, and vanilla.",
+        "Add salt and flour; chill dough, then press into tart pan and bake at 350°F for 20 mins.",
+        "Whip cream cheese, almond extract, and condensed milk. Fold in whipped cream.",
+        "For sauce: simmer raspberries, sugar, and water. Add cornstarch slurry and cook until thick.",
+        "Pour cream mixture over crust, chill for an hour, and serve topped with raspberry sauce."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 30,
+      "servings": 15,
+      "difficulty": "Medium",
+      "cuisine": "American",
+      "caloriesPerServing": 563,
+      "tags": ["dessert", "baking", "cheesecake", "vegetarian"],
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "name": "Avocado Chicken Salad",
+      "image": "https://img.spoonacular.com/recipes/633132-556x370.jpg",
+      "ingredients": [
+        "avocados",
+        "chicken breast",
+        "salt",
+        "pepper",
+        "mixed salad greens",
+        "olive oil",
+        "lime juice",
+        "cherry tomatoes",
+        "mayonnaise"
+      ],
+      "instructions": [
+        "Season chicken breast with salt and pepper, then boil until cooked. Cool and cube the meat.",
+        "Cut avocados into cubes.",
+        "Toss salad greens with olive oil and lime juice. Divide into bowls.",
+        "Top each bowl with avocado, chicken, and cherry tomatoes.",
+        "Drizzle with mayonnaise and a dash of black pepper. Serve."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 30,
+      "servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "American",
+      "caloriesPerServing": 665,
+      "tags": ["gluten free", "dairy free", "whole 30", "lunch", "salad"],
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "name": "Coconut Pecan Chicken Salad",
+      "image": "https://img.spoonacular.com/recipes/641606-556x370.jpg",
+      "ingredients": [
+        "chicken breast",
+        "eggs",
+        "milk",
+        "flour",
+        "sugar",
+        "shredded coconut",
+        "pecans",
+        "panko breadcrumbs",
+        "salt",
+        "pepper",
+        "vegetable oil",
+        "salad greens",
+        "cheddar cheese",
+        "mandarin oranges",
+        "strawberries",
+        "poppy seed dressing"
+      ],
+      "instructions": [
+        "Season chicken with salt and pepper.",
+        "Prepare three bowls: one with flour, one with egg and milk mixture, and one with combined sugar, coconut, pecans, and breadcrumbs.",
+        "Coat chicken in flour, dip in egg mix, then coat with coconut mixture.",
+        "Fry in vegetable oil until golden and cooked through. Let cool, then slice.",
+        "Arrange salad greens, cheese, mandarin oranges, and strawberries on plates.",
+        "Top with sliced chicken and drizzle with poppy seed dressing."
+      ],
+      "prepTimeMinutes": 20,
+      "cookTimeMinutes": 20,
+      "servings": 4,
+      "difficulty": "Medium",
+      "cuisine": "American",
+      "caloriesPerServing": 710,
+      "tags": ["salad", "fried", "sweet-savory"],
+      "userId": 1
+    },
+    {
+      "id": 6,
+      "name": "Fennel & Clementine Salad",
+      "image": "https://img.spoonacular.com/recipes/658507-556x370.jpg",
+      "ingredients": [
+        "fennel bulb",
+        "clementines",
+        "clementine juice",
+        "lemon juice",
+        "olive oil",
+        "dijon mustard",
+        "honey",
+        "salt",
+        "black pepper",
+        "fresh mint"
+      ],
+      "instructions": [
+        "Slice fennel thinly using a knife or mandoline.",
+        "Peel and segment clementines.",
+        "Whisk together clementine juice, lemon juice, olive oil, mustard, and honey.",
+        "Toss fennel and clementines with the dressing in a bowl.",
+        "Season with salt and pepper.",
+        "Garnish with fresh mint leaves and serve."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 0,
+      "servings": 2,
+      "difficulty": "Easy",
+      "cuisine": "Mediterranean",
+      "caloriesPerServing": 180,
+      "tags": ["vegetarian", "gluten free", "salad", "citrus"],
+      "userId": 1
+    },
+    {
+      "id": 7,
+      "name": "Maple Dijon Apple Coleslaw",
+      "image": "https://img.spoonacular.com/recipes/716195-556x370.jpg",
+      "ingredients": [
+        "green cabbage",
+        "red cabbage",
+        "carrot",
+        "apple",
+        "green onions",
+        "fresh parsley",
+        "olive oil",
+        "apple cider vinegar",
+        "dijon mustard",
+        "maple syrup",
+        "salt",
+        "black pepper"
+      ],
+      "instructions": [
+        "Shred green and red cabbage, and grate the carrot.",
+        "Thinly slice the apple and chop green onions and parsley.",
+        "In a small bowl, whisk together olive oil, apple cider vinegar, Dijon mustard, and maple syrup.",
+        "Toss all salad ingredients in a large bowl.",
+        "Drizzle with dressing, season with salt and pepper, and toss again.",
+        "Let sit for 10 minutes before serving."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 0,
+      "servings": 6,
+      "difficulty": "Easy",
+      "cuisine": "American",
+      "caloriesPerServing": 140,
+      "tags": ["salad", "vegetarian", "coleslaw", "dairy free", "gluten free"],
+      "userId": 1
+    },
+    {
+      "id": 8,
+      "name": "Authentic Kentucky Bourbon Balls",
+      "image": "https://img.spoonacular.com/recipes/633080-556x370.jpg",
+      "ingredients": [
+        "bourbon",
+        "pecans",
+        "powdered sugar",
+        "unsweetened cocoa powder",
+        "vanilla wafer crumbs",
+        "light corn syrup"
+      ],
+      "instructions": [
+        "In a deep bowl, combine crushed vanilla wafer crumbs, chopped pecans, powdered sugar, and cocoa.",
+        "In a separate bowl, mix the bourbon and corn syrup.",
+        "Pour the bourbon mixture into the dry mixture and blend well.",
+        "Cover and chill for 3 hours.",
+        "Shape dough into small balls and roll in powdered sugar.",
+        "Store in refrigerator overnight in a tightly covered container."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 0,
+      "servings": 36,
+      "difficulty": "Easy",
+      "cuisine": "Southern",
+      "caloriesPerServing": 64,
+      "tags": [
+        "dessert",
+        "holiday",
+        "no bake",
+        "dairy free",
+        "vegetarian"
+      ],
+      "userId": 1
+    },
+    {
+      "id": 9,
+      "name": "Zucchini and Tomato Toss",
+      "image": "https://img.spoonacular.com/recipes/659061-556x370.jpg",
+      "ingredients": [
+        "zucchini",
+        "grape tomatoes",
+        "olive oil",
+        "garlic",
+        "basil",
+        "parmesan cheese",
+        "salt",
+        "black pepper"
+      ],
+      "instructions": [
+        "Slice zucchini into rounds and halve the grape tomatoes.",
+        "Heat olive oil in a skillet over medium heat.",
+        "Add garlic and cook for 1 minute until fragrant.",
+        "Add zucchini and cook for 5–7 minutes until tender.",
+        "Stir in tomatoes and cook for another 2–3 minutes.",
+        "Season with salt and pepper, then top with fresh basil and grated parmesan.",
+        "Serve warm."
+      ],
+      "prepTimeMinutes": 10,
+      "cookTimeMinutes": 10,
+      "servings": 4,
+      "difficulty": "Easy",
+      "cuisine": "Mediterranean",
+      "caloriesPerServing": 150,
+      "tags": ["vegetarian", "gluten free", "low carb", "side dish"],
+      "userId": 1
+    },
+    {
+      "id": 10,
+      "name": "Sun-Dried Tomato and Feta Stuffed Chicken",
+      "image": "https://img.spoonacular.com/recipes/660228-556x370.jpg",
+      "ingredients": [
+        "chicken breasts",
+        "sun-dried tomatoes",
+        "feta cheese",
+        "spinach",
+        "olive oil",
+        "garlic",
+        "salt",
+        "black pepper",
+        "toothpicks or kitchen twine"
+      ],
+      "instructions": [
+        "Preheat oven to 375°F (190°C).",
+        "Butterfly the chicken breasts and season with salt and pepper.",
+        "Mix sun-dried tomatoes, feta, spinach, and garlic in a bowl.",
+        "Stuff each chicken breast with the mixture and secure with toothpicks.",
+        "Heat olive oil in an oven-safe skillet and sear each side of the chicken until golden.",
+        "Transfer skillet to oven and bake for 20 minutes or until cooked through.",
+        "Rest for 5 minutes before serving."
+      ],
+      "prepTimeMinutes": 15,
+      "cookTimeMinutes": 25,
+      "servings": 4,
+      "difficulty": "Medium",
+      "cuisine": "Mediterranean",
+      "caloriesPerServing": 410,
+      "tags": ["stuffed", "high protein", "gluten free", "dinner"],
+      "userId": 1
+    }
+  ]
+}
