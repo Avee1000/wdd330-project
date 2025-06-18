@@ -1,6 +1,6 @@
 export default class RecipeData {
-  constructor() {
-    this.path = "https://dummyjson.com/recipes?limit=50";
+  constructor(path) {
+    this.path = path;
   }
 
   async getData() {

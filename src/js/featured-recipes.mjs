@@ -61,7 +61,7 @@ export function showModal(recipe) {
 } 
 
 async function displayRandomRecipes() {
-    const data = new RecipeData();
+    const data = new RecipeData("https://avee1000.github.io/wdd330-project/src/recipes.json");
     console.log(data);
     const recipes = await data.getData();
 

@@ -151,7 +151,7 @@ searchInput.addEventListener("input", () => {
 // Function to render recipes
 async function renderRecipes(page = 1) {
   try {
-    const recipes = new RecipeData();
+    const recipes = new RecipeData("https://dummyjson.com/recipes?limit=50");
     const data = await recipes.getData();
     console.log(data);
     let filtered = data.filter((r) => {
