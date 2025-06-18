@@ -27,6 +27,7 @@
       "cuisine": "Southern",
       "caloriesPerServing": 487,
       "tags": ["gluten free", "southern", "side dish"],
+      "mealType": "Side",
       "userId": 1
     },
     {
@@ -58,6 +59,7 @@
       "cuisine": "Italian",
       "caloriesPerServing": 620,
       "tags": ["italian", "creamy", "vegetarian"],
+      "mealType": "Dinner",
       "userId": 1
     },
     {
@@ -94,6 +96,7 @@
       "cuisine": "American",
       "caloriesPerServing": 563,
       "tags": ["dessert", "baking", "cheesecake", "vegetarian"],
+      "mealType": "Dessert",
       "userId": 1
     },
     {
@@ -125,6 +128,7 @@
       "cuisine": "American",
       "caloriesPerServing": 665,
       "tags": ["gluten free", "dairy free", "whole 30", "lunch", "salad"],
+      "mealType": "Lunch",
       "userId": 1
     },
     {
@@ -164,6 +168,7 @@
       "cuisine": "American",
       "caloriesPerServing": 710,
       "tags": ["salad", "fried", "sweet-savory"],
+      "mealType": "Lunch",
       "userId": 1
     },
     {
@@ -197,6 +202,7 @@
       "cuisine": "Mediterranean",
       "caloriesPerServing": 180,
       "tags": ["vegetarian", "gluten free", "salad", "citrus"],
+      "mealType": "Appetizer",
       "userId": 1
     },
     {
@@ -232,7 +238,11 @@
       "cuisine": "American",
       "caloriesPerServing": 140,
       "tags": ["salad", "vegetarian", "coleslaw", "dairy free", "gluten free"],
-      "userId": 1
+      "userId": 1,
+      "mealType": [
+        "Lunch",
+        "Dinner"
+      ]
     },
     {
       "id": 8,
@@ -267,6 +277,7 @@
         "dairy free",
         "vegetarian"
       ],
+      "mealType": "Dessert",
       "userId": 1
     },
     {
@@ -299,6 +310,7 @@
       "cuisine": "Mediterranean",
       "caloriesPerServing": 150,
       "tags": ["vegetarian", "gluten free", "low carb", "side dish"],
+      "mealType": "Side",
       "userId": 1
     },
     {
@@ -332,6 +344,7 @@
       "cuisine": "Mediterranean",
       "caloriesPerServing": 410,
       "tags": ["stuffed", "high protein", "gluten free", "dinner"],
+      "mealType": "Dinner",
       "userId": 1
     }
   ]
