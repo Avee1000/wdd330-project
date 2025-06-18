@@ -4,5 +4,4 @@ import { headerJS } from "./script.mjs";
 
 loadHeaderFooter().then(() => {
   headerJS();
-  // initHamburger();
 });
